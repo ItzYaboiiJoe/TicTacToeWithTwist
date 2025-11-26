@@ -7,11 +7,7 @@ struct GameView: View {
     @StateObject var viewModel = GameViewModel()
     
     var body: some View {
-        
-        
-        Button("reset"){
-            viewModel.reset()
-        }
+        BoardView()
     }
 }
 

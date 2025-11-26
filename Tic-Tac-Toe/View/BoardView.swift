@@ -1,10 +1,3 @@
-//
-//  BoardView.swift
-//  Tic-Tac-Toe
-//
-//  Created by Israel on 11/26/25.
-//
-
 import SwiftUI
 
 struct BoardView: View {
@@ -14,7 +7,7 @@ struct BoardView: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 10) {
             ForEach(0..<9, id: \.self) { index in
-                Text("\(index)")
+                Text("")
                     .font(.system(size: 100))
                     .frame(width: 100, height: 100)
                     .background(Color.blue)
