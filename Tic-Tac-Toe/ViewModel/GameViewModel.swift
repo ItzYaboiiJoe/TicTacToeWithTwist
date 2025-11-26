@@ -1,10 +1,3 @@
-//
-//  GameViewModel.swift
-//  Tic-Tac-Toe
-//
-//  Created by Israel on 11/26/25.
-//
-
 import Foundation
 import Combine
 

@@ -1,10 +1,3 @@
-//
-//  GameController.swift
-//  Tic-Tac-Toe
-//
-//  Created by Israel on 11/26/25.
-//
-
 import Foundation
 
 final class GameController {
@@ -13,6 +6,7 @@ final class GameController {
     func resetGame() {
         
     }
+    
     // Start Game
     func startGame() {
         
