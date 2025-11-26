@@ -8,8 +8,10 @@ final class GameController {
     }
     
     // Start Game
-    func startGame() {
+    func startGame() -> Player {
+        let startingPlayer: Player = Bool.random() ? .x : .o
         
+        return startingPlayer
     }
     
     // Determine Game Over

@@ -1,16 +1,29 @@
-import SwiftUI
 import Combine
+import SwiftUI
 
 struct GameView: View {
-    
-    // Calls so you don't need to write funcs in here just call the GameViewModel and it will talk to the controller
     @StateObject var viewModel = GameViewModel()
     
     var body: some View {
-        BoardView()
+        VStack {
+            // Top
+            Text(viewModel.title)
+                .bold()
+                .font(.largeTitle)
+
+            Spacer()
+
+            // Middle
+            BoardView()
+
+            Spacer()
+
+            // Bottom
+            Text("Bottom")
+        }
+        .padding()
     }
 }
-
 #Preview {
     GameView()
 }
